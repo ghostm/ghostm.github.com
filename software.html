@@ -1,0 +1,15 @@
+---
+layout: default
+title: Software posts in Ghostm's Blog
+---
+
+<div id="home">
+  <h2 class="green">Software</h2>
+  <ul class="posts">
+    {% for post in site.categories.software %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+<p><a href="/about.html" class="pink">About Me</a></p>
+<p></p> 
+</div>
