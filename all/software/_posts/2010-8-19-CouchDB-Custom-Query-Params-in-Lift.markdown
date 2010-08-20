@@ -11,7 +11,7 @@ title: CouchDB Custom Query Params in Lift
 One of the new features of Lift is the ability to use custom parameters when making a CouchDB query using the withParams method of Queryable.
 This allows you to do things like have your couch query output docs sorted by one field while limiting the output to docs that contain a specific value.
 
-Lets say you store all of your homework assignments in couch and your query to be sorted by date.  Your couch design might look like this:
+Let's say you store all of your homework assignments in couch and you want your query to output all assignments sort by date.  Your couch design might look like this:
 
 {% highlight javascript %}
 function(doc) { 

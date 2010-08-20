@@ -218,8 +218,9 @@ color:gray;
 
 div.slogan {
 color:gray;
+font-family: anisette-petite-1, anisette-petite-2;
 font-size:1.5em;
-font-weight:700;
+font-weight: normal;
 letter-spacing:-1px;
 line-height:1.2em;
 margin:-15px 0 60px 0px;
