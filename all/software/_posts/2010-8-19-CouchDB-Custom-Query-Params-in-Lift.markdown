@@ -21,14 +21,15 @@ function(doc) {
 }
 {% endhighlight %}
 
-If you want to limit what gets return by a specific class you can now make a call like:
+If you want to limit the number of assignments that get returned you can query with the parameter "limit":
 {% highlight scala %}
-var tempParam:Map[String, Any] = Map[String, Any]("Class"->JString("English"))
+var tempParam:Map[String, Any] = Map[String, Any]("limit"->JInt(3))
 var viewReturn = Homework.queryView("HomeworkDbViews", "FindAllHomeworkDesign", _.withParams(tempParam))
 {% endhighlight %}
 
 This adds some nice flexibility to using CouchDB with Lift.
 
+For more information on the querying options available with CouchDB check out the [CouchDB wiki](http://wiki.apache.org/couchdb/HTTP_view_API#Querying_Options)
 For more details check out the [Queryable API](http://main.scala-tools.org/mvnsites/liftweb-2.0/framework/scaladocs/net/liftweb/couchdb/Queryable.html)
 
 Note: In Lift 2.0 withParams is a protected method so you need to be using the 2.1 Snapshot
