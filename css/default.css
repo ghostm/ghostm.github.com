@@ -1,8 +1,10 @@
 body {
 font-style: normal;
 font-weight: normal;
+
 background-color:#292c37; 
 background-image:url('/images/back.png'); color:#e5e5e5;
+
 font: anisette-petite-1, anisette-petite-2, 'lucida grande', 'lucida sans unicode', Verdana, Tahoma, Arial, sans-serif;
 line-height:1.2em;
 margin:0 auto;

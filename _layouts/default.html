@@ -1,54 +1,61 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 <head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8"  />
-<meta name="description" content="Ghostm's Jekyll" />
-<meta name="keywords" content="life,code,software,development" />
-<meta name="author" content="Ghostm" />
-<link rel="stylesheet" type="text/css" href="/css/default.css" />
-<link rel="stylesheet" type="text/css" href="/css/native.css" />
-<link rel="icon" type="image/png" href="/images/icon.png" />
-<script type="text/javascript" src="http://use.typekit.com/hwc5xra.js"></script>
-<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-<!-- TODO: Figure out rss feed -->
-<title>Ghostm</title>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>{{ page.title }}</title>
+   <meta name="author" content="Matthew Henderson" />
+   <!-- syntax highlighting CSS -->
+   <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+   <!-- Homepage CSS -->
+   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+   <!-- Typekit -->
+	<script type="text/javascript" src="http://use.typekit.com/hwc5xra.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </head>
-
 <body>
-<div id="wrap">
-	<div id="header">
-		<p id="toplinks">
 
-		</p>
+<!-- ClickTale Top part -->
+<script type="text/javascript">
+var WRInitTime=(new Date()).getTime();
+</script>
+<!-- ClickTale end of Top part -->
 
-		<h1><a href="/"><div id="logo"></div>Ghost<span class="fade">M</span></a></h1>
-		<div class="slogan">
-				<a href="/life.html" class="pink">Life</a> :: 
-				<a href="/software.html" class="green">Software</a> :: Nil
-		</div>
-
-</div>
-
-<div id="content">  
+<div class="site">
+  <div class="title">
+    <a href="/about.html">Matthew Henderson</a>
+    <a class="extra" href="/">home</a>
+  </div>
+  
   {{ content }}
+  
+  <div class="footer">
+    <div class="contact">
+      <p>
+        <a href="http://github.com/ghostm">github.com/ghostm</a>  <br />
+      </p>
+    </div>
+    
+    <div class="contact">
+      <p>
+	    <a href="http://twitter.com/ghostm">twitter.com/ghostm</a>  <br />
+      </p>
+    </div>
+    <div class="contact">
+      <p>
+	    <a href="http://www.last.fm/user/ghost-m">last.fm/user/ghost-m</a>  <br />
+      </p>
+    </div>
+    <div class="contact">
+      <p>
+	    <a href="http://ghostm.github.com/atom.xml">Feed</a>  <br />
+      </p>
+    </div>
+  </div>
 </div>
 
-<div id="footer">
-
-    Powered by <a href="http://github.com/mojombo/jekyll">Jekyll</a> ::
-    design inspired by <a href="http://danhixon.github.com">Dan Hixon</a> ::
-    <a href="http://ghostm.tumblr.com">Tumblog</a> ::
-    <a href="http://twitter.com/ghostm">Twitter</a> :: 
-    <a href="http://ghostm.github.com/atom.xml">Feed</a> :: Nil
-
-<p>&copy; 2010 <a href="/about.html">Matthew Henderson</a>
-
-</div>
-
-</div>
 
 </body>
+
 <a href="http://github.com/ghostm"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" /></a>
 
 </html>
-
