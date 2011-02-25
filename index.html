@@ -4,7 +4,13 @@ title: GhostM's Blog
 ---
 
 <div id="home">
+	<div id="post">
+		{% for post in site.posts limit:1 %}
+		{{ post.content }}
+		{% endfor %}
+		</div>
   <h2 class="fade">Thoughts of mine:</h2>
+
   <ul class="posts">
     {% for post in site.posts %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
