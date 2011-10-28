@@ -4,18 +4,43 @@ title: GhostM's Blog
 ---
 
 <div id="home">
-	<div id="post">
-		{% for post in site.posts limit:1 %}
-		{{ post.content }}
-		{% endfor %}
+	<div class="container">
+	
+	<div class="row">
+		<div class="twocol"></div>
+		<div class="eightcol">
+			<div id="post">
+				{% for post in site.posts limit:1 %}
+				{{ post.content }}
+				{% endfor %}
+			</div>
 		</div>
-  <h3 class="fade">Other thoughts of mine:</h3>
+		<div class="twocol last"></div>
+	</div>
+	</div>
+	<div class="container">
+	
+	<div class="row">
+		<div class="twocol"></div>
+		<div class="eightcol">
+			<h3 class="fade">Other thoughts of mine:</h3>
+		</div>
+		<div class="twocol last"></div>
+	</div>
+	</div>
+	<div class="row">
+		<div class="container">
+		
+		<div class="twocol"></div>
+		<div class="eightcol">
 
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-  
+			<ul class="posts">
+				{% for post in site.posts %}
+				<li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+				{% endfor %}
+			</ul>
+		</div>
+		<div class="twocol last"></div>
+	</div>
+	</div>
 </div>
-  

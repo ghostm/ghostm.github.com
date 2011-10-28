@@ -17,4 +17,6 @@ _layouts/post copy.html
 
 _layouts/default copy.html
 
+server/
+
 .gitignore
